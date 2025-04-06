@@ -13,54 +13,66 @@ import { Video, FileText, Search, Download, Play, ExternalLink } from "lucide-re
 const videoResources = [
   {
     id: 1,
-    title: "Introduction to Web Development",
-    description: "Learn the basics of HTML, CSS, and JavaScript in this comprehensive tutorial.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=Web+Dev",
-    videoSrc: null,
-    duration: "45 min",
-    category: "Programming",
+    title: "Equity & Equality",
+    description:
+      "Discover the difference between equity and equality, and why both matter in creating fair and inclusive opportunities for all.",
+    thumbnail: "/equite-banner.png",
+    videoSrc: "/Equity vs. Equality in Education A 1Minute Explainer_free.mp4",
+    videoId: null, // For local videos
+    duration: "1 min",
+    category: "Inclusion",
+    date: "March 15, 2025",
     presentation: {
-      title: "Web Development Fundamentals",
+      title: "Equity & Equality",
       fileSize: "2.4 MB",
       format: "PDF",
     },
   },
   {
     id: 2,
-    title: "Digital Accessibility Fundamentals",
-    description: "Understanding how to make digital content accessible to everyone.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=Accessibility",
-    videoSrc: "/Equity vs. Equality in Education A 1Minute Explainer_free.mp4",
-    duration: "1 min",
-    category: "Accessibility",
+    title: "Neurodiversity: Celebrating Different Minds",
+    description:
+      "Explore the concept of neurodiversity and celebrate the unique strengths and perspectives of different minds in our society.",
+    thumbnail: "/celebrating.png",
+    videoSrc: null, // Not using direct source for Google Drive videos
+    videoId: "1qCUlRASHoKHwSJ8CAxWI8_9EvHmZiI8D", // Google Drive file ID
+    duration: "1:19 min",
+    category: "Inclusion",
+    date: "April 2, 2025",
     presentation: {
-      title: "Accessibility Guidelines",
-      fileSize: "1.8 MB",
+      title: "Neurodiversity Handbook",
+      fileSize: "5.8 MB",
       format: "PDF",
     },
   },
   {
     id: 3,
-    title: "Inclusive Design Principles",
-    description: "Learn how to design products that work for diverse users and abilities.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=Inclusive+Design",
-    videoSrc: null,
-    duration: "55 min",
-    category: "Design",
+    title: "A Day in an Inclusive Classroom",
+    description:
+      "Step into a diverse classroom setting where every student is valued. Discover how inclusive education fosters respect, collaboration, and equal opportunities for all learners.",
+    thumbnail: "/aday.png",
+    videoSrc: "/A_Day_in_an_Inclusive_Classroom_Embraci_2025_04.mp4",
+    videoId: null,
+    duration: "2:07 min",
+    category: "Inclusion",
+    date: "March 10, 2025",
     presentation: {
-      title: "Inclusive Design Handbook",
+      title: "Inclusive Classroom Guide",
       fileSize: "3.2 MB",
       format: "PDF",
     },
   },
   {
     id: 4,
-    title: "Cultural Competence in Education",
-    description: "Developing skills to work effectively across cultural differences.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=Cultural+Competence",
-    videoSrc: null,
-    duration: "40 min",
+    title: "From Stigma to Empowerment",
+    description:
+      "Explore how inclusive education has transformed over time—from marginalization to empowerment—creating supportive environments where every learner can thrive.",
+    thumbnail: "/stigma.png",
+    videoSrc: "/From_Stigma_to_Empowerment_The_Evolutio_2025_04.mp4",
+    videoId: null,
+    duration: "4:39 min",
     category: "Education",
+    date: "March 5, 2025",
     presentation: {
       title: "Cultural Competence Framework",
       fileSize: "2.1 MB",
@@ -203,52 +215,21 @@ export default function ResourcesPage() {
                       className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
                     >
                       <div className="relative h-48">
-                        {video.videoSrc ? (
-                          <div className="w-full h-full">
-                            <video
-                              className="w-full h-full object-cover"
-                              muted
-                              loop
-                              preload="metadata"
-                              poster={video.thumbnail}
-                              onMouseOver={(e) => (e.target as HTMLVideoElement).play()}
-                              onMouseOut={(e) => {
-                                const videoEl = e.target as HTMLVideoElement
-                                videoEl.pause()
-                                videoEl.currentTime = 0
-                              }}
-                            >
-                              <source src={video.videoSrc} type="video/mp4" />
-                            </video>
-                            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                              <Link
-                                href={`/resources/videos/${video.id}`}
-                                className="bg-white/90 dark:bg-gray-800/90 text-purple-600 dark:text-purple-400 p-3 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-300"
-                              >
-                                <Play className="h-6 w-6" />
-                                <span className="sr-only">Play video</span>
-                              </Link>
-                            </div>
-                          </div>
-                        ) : (
-                          <>
-                            <Image
-                              src={video.thumbnail || "/placeholder.svg"}
-                              alt={video.title}
-                              fill
-                              className="object-cover transition-transform duration-500 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                              <Link
-                                href={`/resources/videos/${video.id}`}
-                                className="bg-white/90 dark:bg-gray-800/90 text-purple-600 dark:text-purple-400 p-3 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-300"
-                              >
-                                <Play className="h-6 w-6" />
-                                <span className="sr-only">Play video</span>
-                              </Link>
-                            </div>
-                          </>
-                        )}
+                        <Image
+                          src={video.thumbnail || "/placeholder.svg"}
+                          alt={video.title}
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                          <Link
+                            href={`/resources/videos/${video.id}`}
+                            className="bg-white/90 dark:bg-gray-800/90 text-purple-600 dark:text-purple-400 p-3 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-300"
+                          >
+                            <Play className="h-6 w-6" />
+                            <span className="sr-only">Play video</span>
+                          </Link>
+                        </div>
                         <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
                           {video.duration}
                         </div>

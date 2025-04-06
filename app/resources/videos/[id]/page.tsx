@@ -16,7 +16,7 @@ const videoResources = [
       "Discover the difference between equity and equality, and why both matter in creating fair and inclusive opportunities for all.",
     thumbnail: "/equite-banner.png",
     videoSrc: "/Equity vs. Equality in Education A 1Minute Explainer_free.mp4",
-    videoId: null, // For local videos
+    videoId: "1TsSY7E4tXCSbC1Kqn6nQ0QXLjEJgPU-A", 
     duration: "1 min",
     category: "Inclusion",
     date: "March 15, 2025",
