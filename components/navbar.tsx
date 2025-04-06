@@ -40,7 +40,7 @@ export default function Navbar() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        scrolled ? "bg-white/90 backdrop-blur-md shadow-sm dark:bg-gray-950/90" : "bg-white dark:bg-gray-950",
+        scrolled ? "bg-gray-950 shadow-md" : "bg-gray-950",
       )}
     >
       <div className="container flex h-16 items-center justify-between">
@@ -49,9 +49,9 @@ export default function Navbar() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="font-bold text-xl"
+            className="font-bold text-xl text-white"
           >
-            Educational Platform
+            Inclusive Education
           </motion.div>
         </Link>
 
@@ -62,18 +62,18 @@ export default function Navbar() {
               key={item.name}
               href={item.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
-                pathname === item.href ? "text-primary font-semibold" : "text-foreground",
+                "text-sm font-medium transition-colors hover:text-purple-400",
+                pathname === item.href ? "text-purple-400 font-semibold" : "text-white",
               )}
             >
               {item.name}
             </Link>
           ))}
-          <Button>Sign In</Button>
+          <Button className="bg-purple-600 hover:bg-purple-700">Sign In</Button>
         </nav>
 
         {/* Mobile Navigation Toggle */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+        <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -88,21 +88,21 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="md:hidden"
           >
-            <div className="container py-4 flex flex-col space-y-4 border-t">
+            <div className="container py-4 flex flex-col space-y-4 border-t border-gray-800">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary",
-                    pathname === item.href ? "text-primary font-semibold" : "text-foreground",
+                    "text-sm font-medium transition-colors hover:text-purple-400",
+                    pathname === item.href ? "text-purple-400 font-semibold" : "text-white",
                   )}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full">Sign In</Button>
+              <Button className="w-full bg-purple-600 hover:bg-purple-700">Sign In</Button>
             </div>
           </motion.div>
         )}
