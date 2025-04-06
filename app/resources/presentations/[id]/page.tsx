@@ -13,18 +13,19 @@ import { FileText, Download, ArrowLeft, File, ExternalLink, Play, Clock, Calenda
 const videoResources = [
   {
     id: 1,
-    title: "Introduction to Web Development",
-    description: "Learn the basics of HTML, CSS, and JavaScript in this comprehensive tutorial.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=Web+Dev",
+    title: "3 Key Barriers in Education Communication",
+    description: "It’s essential to be mindful of these barriers when addressing students and parents to ensure clarity and inclusivity.",
+    thumbnail: "/prezintation.png",
+    documentid: "1lK9Hb9li7vWlOZ9R9p-8Xv4VWgMA3l5eK",
     duration: "45 min",
-    category: "Programming",
-    date: "March 15, 2023",
+    category: "inclusion",
+    date: "March 15, 2025",
     presentation: {
-      title: "Web Development Fundamentals",
+      title: "3 Key Barriers in Education Communications",
       fileSize: "2.4 MB",
-      format: "PDF",
+      format: "pptx",
       description:
-        "This presentation covers the core concepts of web development including HTML structure, CSS styling, and JavaScript functionality. It includes code examples and best practices.",
+        "3 Key Barriers in Education Communication",
       documents: [
         { name: "HTML Cheat Sheet", format: "PDF", size: "0.8 MB" },
         { name: "CSS Reference Guide", format: "PDF", size: "1.2 MB" },
@@ -220,12 +221,13 @@ export default function PresentationPage() {
                             </div>
                           </div>
                           <Button
-                            onClick={() => handleDownload(resource.presentation.title)}
+                            onClick={() => window.open("https://drive.google.com/uc?export=download&id=1lK9Hb9li7vWlOZ9R9p-8Xv4VWgMA3l5K", "_blank")}
                             className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/20"
                           >
                             <Download className="mr-2 h-4 w-4" />
                             Download Presentation
                           </Button>
+
                         </div>
                         <p className="mt-4 text-gray-600 dark:text-gray-400">{resource.presentation.description}</p>
                       </CardContent>
