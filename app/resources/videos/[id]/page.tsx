@@ -33,7 +33,7 @@ const videoResources = [
       "Explore the concept of neurodiversity and celebrate the unique strengths and perspectives of different minds in our society.",
     thumbnail: "/celebrating.png",
     videoSrc: null, // Not using direct source for Google Drive videos
-    videoId: "1qCUlRASHoKHwSJ8CAxWI8_9EvHmZiI8D", // Google Drive file ID
+    videoId: "1IkaK2s8VlntF0rvPL7Z9e_59RB8fa-xF", // Google Drive file ID
     duration: "1:19 min",
     category: "Inclusion",
     date: "April 2, 2025",
@@ -49,8 +49,8 @@ const videoResources = [
     description:
       "Step into a diverse classroom setting where every student is valued. Discover how inclusive education fosters respect, collaboration, and equal opportunities for all learners.",
     thumbnail: "/aday.png",
-    videoSrc: "/A_Day_in_an_Inclusive_Classroom_Embraci_2025_04.mp4",
-    videoId: null,
+    videoSrc: null,
+    videoId: "1fZXMzYj7hDAXXsGM4xkzDwzyjQYjOGzi",
     duration: "2:07 min",
     category: "Inclusion",
     date: "March 10, 2025",
@@ -66,8 +66,8 @@ const videoResources = [
     description:
       "Explore how inclusive education has transformed over time—from marginalization to empowerment—creating supportive environments where every learner can thrive.",
     thumbnail: "/stigma.png",
-    videoSrc: "/From_Stigma_to_Empowerment_The_Evolutio_2025_04.mp4",
-    videoId: null,
+    videoSrc: null,
+    videoId: "1qCUlRASHoKHwSJ8CAxWI8_9EvHmZiI8D",
     duration: "4:39 min",
     category: "Education",
     date: "March 5, 2025",

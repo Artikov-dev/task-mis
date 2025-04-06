@@ -20,7 +20,7 @@ export default function Home() {
               className="space-y-6"
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                Breaking Barriers Through Education
+                Breaking Barriers Inclusive Education 
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300">
                 Access quality educational resources, tutorials, and documents to expand your knowledge and skills.
@@ -43,7 +43,7 @@ export default function Home() {
               className="relative h-[400px] rounded-xl overflow-hidden shadow-xl"
             >
               <Image
-                src="/banner-img.png"
+                src="/pexels-mikhail-nilov-8653975.jpg"
                 alt="Educational resources"
                 fill
                 className="object-cover"
