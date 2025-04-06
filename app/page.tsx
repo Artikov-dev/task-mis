@@ -35,7 +35,7 @@ export default function Home() {
                   <Link href="/about">Learn More</Link>
                 </Button>
               </div>
-            </motion.div>-
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
