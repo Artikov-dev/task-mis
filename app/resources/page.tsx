@@ -84,8 +84,8 @@ const videoResources = [
 const documentResources = [
   {
     id: 1,
-    title: "Equity, Diversity, and Inclusion Framework",
-    description: "A comprehensive framework for implementing equity, diversity, and inclusion initiatives.",
+    title: "Euphemisms: Why words matter?",
+    description: "This video explores how euphemisms are used to soften harsh truths and why word choice matters in everyday communication.",
     thumbnail: "/prezintation.png",
     pages: 24,
     category: "Inclusion",
