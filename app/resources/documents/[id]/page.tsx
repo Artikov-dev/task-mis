@@ -24,7 +24,7 @@ const documentResources = [
     id: 2,
     title: "Accessible Content Creation Guide",
     description: "Best practices for creating content that is accessible to all users.",
-    thumbnail: "/prezintation.png",
+    thumbnail: "/neuro.png",
     pages: 18,
     downloadId: "1QnxmO9CA2FloZ0shyR5rC9snfy-DOJ_4",
     category: "Accessibility",

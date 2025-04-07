@@ -84,36 +84,21 @@ const videoResources = [
 const documentResources = [
   {
     id: 1,
-    title: "Diversity and Inclusion Framework",
-    description: "A comprehensive framework for implementing diversity and inclusion initiatives.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=D%26I+Framework",
+    title: "Equity, Diversity, and Inclusion Framework",
+    description: "A comprehensive framework for implementing equity, diversity, and inclusion initiatives.",
+    thumbnail: "/prezintation.png",
     pages: 24,
-    category: "Diversity",
+    category: "Inclusion",
   },
   {
     id: 2,
-    title: "Accessible Content Creation Guide",
-    description: "Best practices for creating content that is accessible to all users.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=Accessibility+Guide",
+    title: "Neurodiversity: Celebrating Different Minds",
+    description: "Neurodiversity: Celebrating Different Minds in Our Society and Creating Inclusive Opportunities for All.",
+    thumbnail: "/neuro.png",
     pages: 18,
     category: "Accessibility",
   },
-  {
-    id: 3,
-    title: "Inclusive Language Handbook",
-    description: "Guidelines for using language that is inclusive and respectful of all people.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=Inclusive+Language",
-    pages: 32,
-    category: "Communication",
-  },
-  {
-    id: 4,
-    title: "Universal Design for Learning",
-    description: "Presentation on implementing UDL principles in educational settings.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=UDL",
-    pages: 45,
-    category: "Education",
-  },
+ 
 ]
 
 export default function ResourcesPage() {
