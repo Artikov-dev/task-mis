@@ -12,40 +12,25 @@ import { FileText, ArrowLeft, Download } from "lucide-react"
 const documentResources = [
   {
     id: 1,
-    title: "Diversity and Inclusion Framework",
-    description: "A comprehensive framework for implementing diversity and inclusion initiatives.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=D%26I+Framework",
+    title: "Equity, Diversity, and Inclusion Framework",
+    description: "A comprehensive framework for implementing equity, diversity, and inclusion initiatives.",
+    thumbnail: "/prezintation.png",
+    downloadId: "1lK9Hb9li7vWlOZ9R9p-8Xv4VWgMA3l5K",
     pages: 24,
-    category: "Diversity",
-    date: "February 10, 2023",
+    category: "inclusion",
+    date: "February 22, 2025",
   },
   {
     id: 2,
     title: "Accessible Content Creation Guide",
     description: "Best practices for creating content that is accessible to all users.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=Accessibility+Guide",
+    thumbnail: "/prezintation.png",
     pages: 18,
+    downloadId: "1QnxmO9CA2FloZ0shyR5rC9snfy-DOJ_4",
     category: "Accessibility",
-    date: "March 5, 2023",
+    date: "March 5, 2025",
   },
-  {
-    id: 3,
-    title: "Inclusive Language Handbook",
-    description: "Guidelines for using language that is inclusive and respectful of all people.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=Inclusive+Language",
-    pages: 32,
-    category: "Communication",
-    date: "April 15, 2023",
-  },
-  {
-    id: 4,
-    title: "Universal Design for Learning",
-    description: "Presentation on implementing UDL principles in educational settings.",
-    thumbnail: "/placeholder.svg?height=400&width=600&text=UDL",
-    pages: 45,
-    category: "Education",
-    date: "May 20, 2023",
-  },
+
 ]
 
 export default function DocumentPage() {
@@ -96,7 +81,7 @@ export default function DocumentPage() {
 
         <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl">
           <div className="relative h-[300px]">
-            <Image src={resource.thumbnail || "/placeholder.svg"} alt={resource.title} fill className="object-cover" />
+            <Image src={resource.thumbnail || "/prezintation.png"} alt={resource.title} fill className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">{resource.category}</span>
@@ -136,10 +121,17 @@ export default function DocumentPage() {
                       </div>
                     </div>
                   </div>
-                  <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
+                  <Button
+                    onClick={() =>
+                      window.open(`https://drive.google.com/uc?export=download&id=${resource.downloadId}`, '_blank')
+                    }
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/20"
+                  >
                     <Download className="mr-2 h-4 w-4" />
                     Download Document
                   </Button>
+
+
                 </div>
               </div>
             </div>

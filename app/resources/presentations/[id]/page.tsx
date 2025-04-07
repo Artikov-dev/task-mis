@@ -27,9 +27,8 @@ const videoResources = [
       description:
         "3 Key Barriers in Education Communication",
       documents: [
-        { name: "HTML Cheat Sheet", format: "PDF", size: "0.8 MB" },
-        { name: "CSS Reference Guide", format: "PDF", size: "1.2 MB" },
-        { name: "JavaScript Basics", format: "PDF", size: "1.5 MB" },
+        { name: "Inclusive Classroom Strategies", format: "PDF", size: "1.1 MB" },
+        { name: "Cross-Cultural Communication", format: "PDF", size: "0.8 MB" },
       ],
     },
   },
@@ -90,9 +89,9 @@ const videoResources = [
       description:
         "A framework for developing cultural competence in educational settings. This presentation covers key concepts, strategies for implementation, and assessment methods.",
       documents: [
-        { name: "Cultural Awareness Assessment", format: "PDF", size: "0.6 MB" },
-        { name: "Inclusive Classroom Strategies", format: "PDF", size: "1.1 MB" },
-        { name: "Cross-Cultural Communication", format: "PDF", size: "0.8 MB" },
+        { name: "Cultural Competence Checklist", format: "PDF", size: "0.7 MB" },
+        { name: "Cultural Competence Assessment", format: "PDF", size: "0.8 MB" },
+        { name: "Cultural Competence Training", format: "PDF", size: "1.2 MB" },
       ],
     },
   },
