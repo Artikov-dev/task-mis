@@ -84,7 +84,7 @@ const videoResources = [
 const documentResources = [
   {
     id: 1,
-    title: "Euphemisms: Why words matter?",
+    title: "Euphemisms: Why words matter?", 
     description: "This video explores how euphemisms are used to soften harsh truths and why word choice matters in everyday communication.",
     thumbnail: "/prezintation.png",
     pages: 24,
@@ -95,6 +95,14 @@ const documentResources = [
     title: "Neurodiversity: Celebrating Different Minds",
     description: "Neurodiversity: Celebrating Different Minds in Our Society and Creating Inclusive Opportunities for All.",
     thumbnail: "/neuro.png",
+    pages: 18,
+    category: "Accessibility",
+  },
+  {
+    id: 3,
+    title: "Neurodiversity Resources Handbook",
+    description: "Neurodiversity: Resources for Inclusive Education and Community Engagement.",
+    thumbnail: "/image.png",
     pages: 18,
     category: "Accessibility",
   },

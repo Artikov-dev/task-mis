@@ -30,6 +30,16 @@ const documentResources = [
     category: "Accessibility",
     date: "March 5, 2025",
   },
+  {
+    id: 3,
+    title: "Neurodiversity Resources for Educators",
+    description: "Meurodiversity Resources for Educators: A Comprehensive Guide to Inclusive Education.",
+    thumbnail: "/image.png",
+    pages: 18,
+    downloadId: "1wykKOaVRuxlj_TO7NBLLaBKZm8a9Aof6",
+    category: "Accessibility",
+    date: "March 5, 2025",
+  },
 
 ]
 
